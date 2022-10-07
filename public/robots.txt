@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Disallow: /secret
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.kk.com
+
+# Sitemaps
+Sitemap: https://www.kk.com/sitemap.xml
+Sitemap: https://www.kk.com/server-sitemap.xml
