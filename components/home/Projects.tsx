@@ -66,7 +66,7 @@ const Projects = () => {
         </Heading>
         <div className="p">
           {projects.map((project) => (
-            <div className="pWrapper">
+            <div className="pWrapper" key={project.title} >
               <div className="projectWrapper">
                 <Box
                   className="projectDesc"
@@ -80,7 +80,7 @@ const Projects = () => {
                     <Box className="links" display='flex' >
                       <div className="wrap">
                       <b>
-                        <a className='animatedButton'  target="_blank" href={project.link}  >
+                        <a className='animatedButton'  target="_blank" rel="noreferrer" href={project.link}  >
                           Live Demo
                         </a>
                       </b>
@@ -102,19 +102,19 @@ const Projects = () => {
                     </Box>
                     <div className="language">
                       {project?.stack?.map((lang) => (
-                        <Icon className="smallIcon" icon={lang} />
+                        <Icon className="smallIcon" key={lang} icon={lang} />
                       ))}
                     </div>
                   </div>
                 </Box>
                 <div className="projectImage">
-                  <a href={project.link} target="_blank" rel="noopener">
+                  <a href={project.link} target="_blank" rel="noreferrer">
                     {project.video ? (
                       <iframe
                         width="600px"
                         height="400px"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
+                        // allowfullscreen
                         src={project.video}
                       ></iframe>
                     ) : (

@@ -5,3 +5,12 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+module.exports = {
+  images: {
+    domains: [
+      "/images.unsplash.com",
+      "images.unsplash.com",
+      "lh5.googleusercontent.com",
+    ],
+  }
+};

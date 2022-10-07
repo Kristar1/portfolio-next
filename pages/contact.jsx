@@ -26,10 +26,12 @@ import {
 } from "react-icons/md";
 import { BsGithub,BsLinkedin, BsPerson, BsTwitter } from "react-icons/bs";
 import { useState } from "react";
+import React from 'react'
 
-export default function contact() {
-  const [message, setMessage] = useState('')
-    
+
+const Contact = () => {
+const [message, setMessage] = useState('')
+
   return (
     <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden">
       <Flex>
@@ -57,7 +59,7 @@ export default function contact() {
                         width="200px"
                         variant="ghost"
                         color="#DCE2FF"
-                        href="tel:+917003920639"
+                        // href="tel:+917003920639"
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdPhone color="#1970F1" size="20px" />}
                       >
@@ -93,7 +95,7 @@ export default function contact() {
                     px={5}
                     alignItems="flex-start"
                   >
-                    <a href="https://twitter.com/KrishKedia_" target='_blank' rel='noferror' >
+                    <a href="https://twitter.com/KrishKedia_" target='_blank'  rel="noreferrer" >
                       <IconButton
                         aria-label="twitter"
                         variant="ghost"
@@ -103,7 +105,7 @@ export default function contact() {
                         icon={<BsTwitter size="28px" />}
                       />
                     </a>
-                    <a href="https://github.com/Kristar1" target='_blank' rel='noferror' >
+                    <a href="https://github.com/Kristar1" target='_blank'rel="noreferrer" >
                       <IconButton
                         aria-label="github"
                         variant="ghost"
@@ -113,7 +115,7 @@ export default function contact() {
                         icon={<BsGithub size="28px" />}
                       />
                     </a>
-                    <a href="https://www.linkedin.com/in/krish-kedia/" target='_blank' rel='noferror' >
+                    <a href="https://www.linkedin.com/in/krish-kedia/" target='_blank' rel="noreferrer" >
                       <IconButton
                         aria-label="Linkedin"
                         variant="ghost"
@@ -139,8 +141,9 @@ export default function contact() {
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement
                             pointerEvents="none"
-                            children={<BsPerson color="gray.800" />}
-                          />
+                          >
+                          <BsPerson color="gray.800" />
+                          </InputLeftElement>
                           <Input name="name" placeholder="name" type="text" size="md" />
                         </InputGroup>
                       </FormControl>
@@ -149,8 +152,9 @@ export default function contact() {
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement
                             pointerEvents="none"
-                            children={<MdOutlineEmail color="gray.800" />}
-                          />
+                          >
+                          <MdOutlineEmail color="gray.800" />
+                          </InputLeftElement>
                           <Input name="email" placeholder="email" type="email" size="md"  />
                         </InputGroup>
                       </FormControl>
@@ -190,5 +194,7 @@ export default function contact() {
         </Box>
       </Flex>
     </Container>
-  );
+  )
 }
+
+export default Contact

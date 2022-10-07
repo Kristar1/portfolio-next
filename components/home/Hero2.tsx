@@ -25,7 +25,7 @@ import {
           py={{ base: 20, md: 28 }}
           direction={{ base: 'column', md: 'row' }}>
           <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-            <Text>Hi , I'm Krish</Text>
+            <Text>Hi , I&apos;m Krish</Text>
             <Heading
             as='h1'
               lineHeight={1.1}

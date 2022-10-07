@@ -139,7 +139,7 @@ const Section1 = () => {
             }}
             fontWeight='medium'
           >
-          As a wearer of many hats, my experience also includes graphic design, typography and UI/UX Design . I'm always curious and always learning...
+          As a wearer of many hats, my experience also includes graphic design, typography and UI/UX Design . I&apos;m always curious and always learning...
 
 
           </chakra.p>

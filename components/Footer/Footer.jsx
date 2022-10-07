@@ -16,7 +16,7 @@ export default function Footer() {
     <div className="footer__container">
     <div className="footer__links">
         <div className="footer__link--items">
-          <h2>I'm always happy to chat about:</h2>
+          <h2>I&apos;m always happy to chat about:</h2>
           <a href='/'>UX/UI</a> <a href="/">MERN Stack </a>
           <a href="https://webflow.com">Webflow</a> <a href="/">Finance</a>
         </div>
@@ -34,16 +34,16 @@ export default function Footer() {
         </div>
         <p className="website__rights">© Copyright 2022. All rights reserved</p>
         <div className="social__icons">
-          <a href="https://github.com//Kristar1" className="social__icon--link" target="_blank">
+          <a href="https://github.com//Kristar1" className="social__icon--link" target="_blank" rel="noreferrer">
             <BsGithub/>
           </a>
 
           
           <a href="https://www.linkedin.com/in/krish-kedia-b0270a22b" className="social__icon--link"
-            target='_blank'><BsLinkedin/>
+            target='_blank'rel="noreferrer"><BsLinkedin/>
           </a>
           <a href="https://twitter.com/the_Krish_Kedia/media"  target='_blank'  className="social__icon--link"
-            ><BsTwitter/>
+            rel="noreferrer"><BsTwitter/>
           </a>
         </div>
       </div>
