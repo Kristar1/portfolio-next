@@ -1,12 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import {
-  MdPhone,
-  MdEmail,
-  MdLocationOn,
-  MdFacebook,
-  MdOutlineEmail,
-} from "react-icons/md";
+
 import { BsGithub,BsLinkedin, BsPerson, BsTwitter } from "react-icons/bs";
 import { Box } from '@chakra-ui/react';
 
