@@ -25,9 +25,12 @@ import {
           py={{ base: 20, md: 28 }}
           direction={{ base: 'column', md: 'row' }}>
           <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-            <Text>Hi , I&apos;m Krish</Text>
+            <Text fontSize={'20px'} >
+              Hi , I&apos;m
+              </Text>
             <Heading
             as='h1'
+              style={{marginTop:'20px'}}
               lineHeight={1.1}
               fontWeight={600}
               fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
@@ -76,23 +79,7 @@ import {
             align={'center'}
             position={'relative'}
             w={'full'}>
-            <Blob
-              w={'150%'}
-              h={'150%'}
-              position={'absolute'}
-              top={'-20%'}
-              left={0}
-              zIndex={-1}
-              color={useColorModeValue('blue.50', '#07C6B9')}
-            />
-            {/* <Box
-              position={'relative'}
-              height={'300px'}
-              rounded={'2xl'}
-              boxShadow={'2xl'}
-              width={'full'}
-              overflow={'hidden'}> */}
-             
+           
               <Image
                 alt={'Hero Image'}
                 fit={'cover'}
@@ -100,21 +87,10 @@ import {
                 w={'100%'}
                 h={'100%'}
                 src={
-                  '/assets/kid.png'
+                  '/assets/dev.png'
                 }
-                mb='100px'
-              />
-              {/* <Image
-                alt={'Hero Image'}
-                fit={'cover'}
-                align={'center'}
-                w={'100%'}
-                h={'100%'}
-                src={
-                  'https://myportfolio-krish.vercel.app/assets/heroimg.webp'
-                }
-              /> */}
-            {/* </Box> */}
+                />
+             
           </Flex>
         </Stack>
       </Container>

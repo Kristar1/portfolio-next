@@ -18,7 +18,7 @@ body {
     font-family: 'Source Code Pro', monospace !important;
     overflow-x: hidden !important;
     /* To change Cursor */
-    /* cursor: url(/static/media/arrowPoint.5b3f3b5….svg) 15 15,move; */
+    // cursor: url('./assets/cursor.svg') 15 15,move; 
 }
 h1{
   font-family: 'Mark-Pro' !important;
@@ -71,9 +71,16 @@ a {
 }
 .container {
   padding: 0 6rem;
+  z-index: -1;
+}
+.navContainer {
+  padding: 0 6rem;
 }
 @media screen and (max-width:600px) {
   .container {
+    padding: 0 1rem !important;
+  }
+  .navContainer {
     padding: 0 1rem !important;
   }
 }
@@ -81,12 +88,18 @@ a {
   .container {
     padding: 0 0.5rem  !important;
   }
+  .navContainer {
+    padding: 0 0.5rem  !important;
+  }
+  h2{
+    font-size: 30px;
+  }
 }
 
 /*  Cursor Design */
 .cursor {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   border: 1px solid white;
   border-radius: 50%;
   position: absolute;
@@ -144,6 +157,8 @@ a {
   animation: cursorAnim3 .5s forwards;
   border: 1px solid red;
 }
+
+
 
 /* Scrollbar */
 html::-webkit-scrollbar {
@@ -242,6 +257,7 @@ $font-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
   }
   
   .animatedButton {
@@ -318,8 +334,6 @@ $font-size: 100%;
       opacity: 0;
     }
   }
-
-
 
 
 
@@ -426,6 +440,10 @@ $font-size: 100%;
 .projectWrapper:hover{
   transform: scale(1.1);
 
+}
+.yt-video{
+  width: 600px;
+  height: 400px;
 }
  @media screen and (max-width:950px) {
   .projects{
@@ -589,6 +607,8 @@ margin-right: 30px;
   height: 100%;
   width: 100%;
   background: #000;
+  display: none;
+  z-index: 1;
   /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
   /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
@@ -603,6 +623,7 @@ margin-right: 30px;
   z-index: 2;
   right: 20px;
   /*left: 20px; */
+  display: none !important;
   top: 20px;
   height: 50px;
   width: 50px;
@@ -698,9 +719,9 @@ margin-right: 30px;
   z-index: -1;
   transition: transform 0.3s ease;
 }
-.wrapper ul li a:hover:after{
-  transform: scaleY(1);
-}
+// .wrapper ul li a:hover:after{
+//   transform: scaleY(1);
+// }
 .wrapper ul li a:hover{
   color: #1a73e8;
 }
@@ -739,7 +760,25 @@ input[type="checkbox"]{
    transition-delay: .6s;
   transform: translateX(-100px);
 }
+.desktop-none{
+  display: none;
+}
 
+
+@media screen and (max-width:700px) {
+  .wrapper{
+    display: block !important;
+  }
+  .menu-btn{
+    display: block !important;
+  }
+  .mobile-none{
+    display: none !important;
+  }
+  .desktop-none{
+    display: block;
+  }
+}
 
 
 

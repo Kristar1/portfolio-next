@@ -59,7 +59,7 @@ const Projects = () => {
   ];
   // <iframe width="1044" height="481" src="https://www.youtube.com/embed/tssRZ299YG0" title="My Party Vendor Directory Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   return (
-    <Box minH="100vh">
+    <Box minH="100vh" mt='140px' >
       <div className=" specialSection projects" id="projects">
         <Heading textAlign="center" as="h2" fontSize="4xl">
           Some Things I’ve Built
@@ -111,8 +111,9 @@ const Projects = () => {
                   <a href={project.link} target="_blank" rel="noreferrer">
                     {project.video ? (
                       <iframe
-                        width="600px"
-                        height="400px"
+                      className="yt-video"
+                        // width="600px"
+                        // height="400px"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         // allowfullscreen
                         src={project.video}

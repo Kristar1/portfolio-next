@@ -9,10 +9,12 @@ const Section1 = () => {
     //   bg: "#3e3e3e",
     // }}
     p={[0,20]}
+    pt={['70px','150px']}
     position='static'
     w="full"
     justifyContent="center"
     alignItems="center"
+    // pt='70px'
   >
     <Box
     //   shadow="xl"
@@ -89,10 +91,7 @@ const Section1 = () => {
   <TabPanel>
     <chakra.p
             mb={5}
-            textAlign={{
-              base: "center",
-              sm: "left",
-            }}
+            textAlign='left'
             color="gray.600"
             _dark={{
               color: "white",
@@ -107,10 +106,7 @@ const Section1 = () => {
           </chakra.p>
           <chakra.p
             mb={5}
-            textAlign={{
-              base: "center",
-              sm: "left",
-            }}
+            textAlign='left'
             color="gray.600"
             _dark={{
               color: "white",
@@ -126,10 +122,7 @@ const Section1 = () => {
           </chakra.p>
           <chakra.p
             mb={5}
-            textAlign={{
-              base: "center",
-              sm: "left",
-            }}
+            textAlign='left'
             color="gray.600"
             _dark={{
               color: "white",
@@ -148,10 +141,7 @@ const Section1 = () => {
     <TabPanel>
     <chakra.p
             mb={5}
-            textAlign={{
-              base: "center",
-              sm: "left",
-            }}
+            textAlign='left'
             color="gray.600"
             _dark={{
               color: "white",
@@ -165,10 +155,7 @@ const Section1 = () => {
           </chakra.p>
           <chakra.p
             mb={5}
-            textAlign={{
-              base: "center",
-              sm: "left",
-            }}
+            textAlign='left'
             color="gray.600"
             _dark={{
               color: "white",
@@ -186,10 +173,7 @@ const Section1 = () => {
     <TabPanel>
     <chakra.p
             mb={5}
-            textAlign={{
-              base: "center",
-              sm: "left",
-            }}
+            textAlign='left'
             color="gray.600"
             _dark={{
               color: "white",

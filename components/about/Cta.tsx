@@ -7,7 +7,7 @@ const Cta = () => {
   _dark={{
     bg: "#000000",
   }}
-  p={50}
+  p={['20px','50']}
   w="full"
   alignItems="center"
   justifyContent="center"

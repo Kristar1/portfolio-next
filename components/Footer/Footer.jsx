@@ -8,6 +8,7 @@ import {
   MdOutlineEmail,
 } from "react-icons/md";
 import { BsGithub,BsLinkedin, BsPerson, BsTwitter } from "react-icons/bs";
+import { Box } from '@chakra-ui/react';
 
 
 export default function Footer() {
@@ -25,6 +26,13 @@ export default function Footer() {
           <Link href="/#projects">My Works</Link> <Link href="/#process">My Process</Link>
           <Link href="/about">About Me</Link>
         </div>
+          <Box fontSize={'15px'} className="footer__link--items">
+          
+          <h2>Attributions</h2>
+          <a href="https://storyset.com/work">Work illustrations by Storyset</a>
+         
+        </Box>
+        
         
     </div>
     <section className="social__media">

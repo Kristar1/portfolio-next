@@ -33,12 +33,12 @@ const Contact = () => {
 const [message, setMessage] = useState('')
 
   return (
-    <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden">
+    <Container bg={["#02054B","#9DC4FB"]} maxW="full" mt={0} centerContent overflow="hidden" pt={['30px','100px']} >
       <Flex>
         <Box
           bg="#02054B"
           color="white"
-          borderRadius="lg"
+          borderRadius={['none',"lg"]}
           m={{ sm: 4, md: 16, lg: 10 }}
           p={{ sm: 5, md: 5, lg: 16 }}
           // width={["unset", "60vw"]}
@@ -144,7 +144,7 @@ const [message, setMessage] = useState('')
                           >
                           <BsPerson color="gray.800" />
                           </InputLeftElement>
-                          <Input name="name" placeholder="name" type="text" size="md" />
+                          <Input name="name" placeholder="name" type="text" size="md" _dark={{color:'black'}} />
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name">

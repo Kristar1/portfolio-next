@@ -1,23 +1,64 @@
-import { FormLabel } from '@chakra-ui/react'
-import React from 'react'
+import { Button, Flex, FormLabel, chakra, Box } from "@chakra-ui/react";
+import Link from "next/link";
+import React from "react";
 
 const MobileNavbar = () => {
   return (
-    <>
-    <input type="checkbox" id="active"/>
-    <FormLabel _dark={{color:'white'}} htmlFor="active" className="menu-btn"><span></span></FormLabel>
-    <label htmlFor="active" className="close"></label>
-    <div className="wrapper">
-      <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Gallery</a></li>
-<li><a href="#">Feedback</a></li>
-</ul>
-</div>
-</>
-  )
-}
+    <Box >
+      <input type="checkbox" id="active" />
+      {/* <Flex height='70px' width='100vw' justifyContent='space-between' >
+      <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
+                    Krish
+                  </chakra.h1>
+    </Flex> */}
+      <FormLabel
+        _dark={{ color: "white" }}
+        htmlFor="active"
+        className="menu-btn"
+        zIndex={'9999'}
+        position='fixed'
+        >
+        <span></span>
+      </FormLabel>
+      <label htmlFor="active" className="close"></label>
+    <Box height='80px' bg='#02054b' className="desktop-none" ></Box>
 
-export default MobileNavbar
+      <Box zIndex={'9998'} className="wrapper">
+        <ul>
+          <li>
+            <Link href="/#projects">Projects</Link>
+          </li>
+          <li>
+            <Link href="/#process">Process</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
+          </li>
+
+            <a
+              href="https://drive.google.com/file/d/16IBYURhVK2iYh7QaiOxBBcuNnLSHsndK/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+          <li>
+              <Button
+                bg="#0919cd"
+                fontSize="2xl"
+                p="30px 60px"
+                _hover={{ transform: "scale(1.1)", backgroundColor: "blue" }}
+                transition="0.5s ease-in-out"
+              >
+                Resume
+              </Button>
+          </li>
+            </a>
+        </ul>
+      </Box>
+    </Box>
+  );
+};
+
+export default MobileNavbar;

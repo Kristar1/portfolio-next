@@ -29,11 +29,11 @@ const Tools = () => {
 
           <Tabs   variant='soft-rounded' colorScheme='blue'>
 <Center>
-  <TabList my='10' backgroundColor='white' p='10px' borderRadius='40px' className='TabList' >
-    <Tab>Frontend</Tab>
-    <Tab>Backend</Tab>
-    <Tab>Website Builders</Tab>
-    <Tab>CSS Libraries</Tab>
+  <TabList my='10'margin='0 10px' backgroundColor='white' p={['5px','10px']} borderRadius='40px' className='TabList' >
+    <Tab fontSize={{base:'13px'}} >Frontend</Tab>
+    <Tab fontSize={{base:'13px'}} >Backend</Tab>
+    <Tab fontSize={{base:'13px'}} >Website Builders</Tab>
+    <Tab fontSize={{base:'13px'}} >CSS Libraries</Tab>
 
     
   </TabList>
@@ -82,6 +82,7 @@ const Tools = () => {
    <Image m='10' src='/assets/wordpress.png' width='100px'/>
    <Image mt='70px' src='/assets/wix.webp' width='100px' height='30px' />
    <Image src='/assets/squarespace.png' width='400px'/>
+   <Icon  className='Icon' icon="logos:shopify" />
 
    </Box>
 

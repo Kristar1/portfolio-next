@@ -24,15 +24,25 @@ const Cta = () => {
       >
         <Flex>
           <Image
-            src="/assets/chat2.png"
+            src="/assets/getintouch.png"
             fit="cover"
-            w="full"
+            w='full'
             h={{
-              base: 64,
+              base: 'unset',
               md: "full",
             }}
             loading="lazy"
           />
+          {/* <Image
+            src="/assets/chat2.png"
+            fit="cover"
+            w='full'
+            h={{
+              base: 'unset',
+              md: "full",
+            }}
+            loading="lazy"
+          /> */}
         </Flex>
         <Flex
           direction="column"

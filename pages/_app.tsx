@@ -1,4 +1,3 @@
-// import "swiper/css";
 import "../styles/globals.scss";
 
 import { ChakraProvider, extendTheme,ColorModeScript } from "@chakra-ui/react";
