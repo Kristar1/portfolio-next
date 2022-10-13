@@ -57,7 +57,7 @@ export default function Hero2() {
             
             fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
           >
-            <Text as={"span"} position={"relative"}
+            <Text  position={"relative"}
             as={motion.div}
             initial={{
               x: "-1000",
@@ -71,7 +71,7 @@ export default function Hero2() {
               Krish kedia
             </Text>
             {/* <br /> */}
-            <Text as={"span"} color={"blue.400"}  as={motion.div}
+            <Text color={"blue.400"}  as={motion.div}
           initial={{
             x: "-1000",
           }}
