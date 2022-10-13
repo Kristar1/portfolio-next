@@ -69,7 +69,7 @@ const Tools = () => {
     <Icon className='Icon' icon="logos:nodejs-icon" />
     <Icon  className='Icon'   icon="logos:axios" />
    <Image width='300px' src='/assets/strapi.png'/>
-   <Image width='200px' src='/assets/graphql.png'/>
+   <Image width='200px'  mt='60px'  height='104px' src='/assets/graphql.png'/>
    </Box>
       </Center>
     </TabPanel>
@@ -81,7 +81,7 @@ const Tools = () => {
    <Icon  className='Icon' icon="logos:figma" />
    <Image m='10' src='/assets/wordpress.png' width='100px'/>
    <Image mt='70px' src='/assets/wix.webp' width='100px' height='30px' />
-   <Image src='/assets/squarespace.png' width='400px'/>
+   <Image  mt='60px' src='/assets/squarespace.png' width='400px' height='90px' />
    <Icon  className='Icon' icon="logos:shopify" />
 
    </Box>

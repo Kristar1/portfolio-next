@@ -2,7 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import { TbBulb} from 'react-icons/tb'
 import {HiOutlineCode} from 'react-icons/hi'
-import { Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 // import AOS from 'aos';
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
@@ -10,7 +10,7 @@ import { Heading, Text } from "@chakra-ui/react";
 
 export default function Process() {
   return (
-    <div className="process" id="process">
+    <Box className="process" id="process" padding={['0','100px 0']} >
       <Heading as='h2' fontSize='4xl' >My Process</Heading>
       <div className="processWrapper">
         <div className="processItem">
@@ -45,6 +45,6 @@ export default function Process() {
           </Text>
         </div>
       </div>
-    </div>
+    </Box>
   );
 }

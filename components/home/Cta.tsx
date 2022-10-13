@@ -55,6 +55,7 @@ const Cta = () => {
           }}
           py={24}
           zIndex={3}
+          data-aos="fade-left"
         >
           {/* <chakra.span
             color="brand.600"

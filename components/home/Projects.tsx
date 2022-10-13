@@ -59,14 +59,14 @@ const Projects = () => {
   ];
   // <iframe width="1044" height="481" src="https://www.youtube.com/embed/tssRZ299YG0" title="My Party Vendor Directory Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   return (
-    <Box minH="100vh" mt='140px' >
+    <Box minH="100vh" mt="140px">
       <div className=" specialSection projects" id="projects">
         <Heading textAlign="center" as="h2" fontSize="4xl">
           Some Things I’ve Built
         </Heading>
         <div className="p">
           {projects.map((project) => (
-            <div className="pWrapper" key={project.title} >
+            <div className="pWrapper" key={project.title} data-aos="zoom-out-down">
               <div className="projectWrapper">
                 <Box
                   className="projectDesc"
@@ -77,13 +77,18 @@ const Projects = () => {
                   </Heading>
                   <Text fontSize="lg">{project.desc}</Text>
                   <div className="more">
-                    <Box className="links" display='flex' >
+                    <Box className="links" display="flex">
                       <div className="wrap">
-                      <b>
-                        <a className='animatedButton'  target="_blank" rel="noreferrer" href={project.link}  >
-                          Live Demo
-                        </a>
-                      </b>
+                        <b>
+                          <a
+                            className="animatedButton"
+                            target="_blank"
+                            rel="noreferrer"
+                            href={project.link}
+                          >
+                            Live Demo
+                          </a>
+                        </b>
                       </div>
 
                       {project.github && (
@@ -92,10 +97,10 @@ const Projects = () => {
                             href={project.github}
                             target="_blank"
                             rel="noopener"
-                            display={'flex'}
-                            padding='0'
+                            display={"flex"}
+                            padding="0"
                           >
-                            <BsGithub/>
+                            <BsGithub />
                           </Link>
                         </b>
                       )}
@@ -107,22 +112,21 @@ const Projects = () => {
                     </div>
                   </div>
                 </Box>
-                <div className="projectImage">
-                  <a href={project.link} target="_blank" rel="noreferrer">
-                    {project.video ? (
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  {project.video ? (
+                    <div className="video-wrapper">
                       <iframe
-                      className="yt-video"
-                        // width="600px"
-                        // height="400px"
+                        // className="yt-video"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        // allowfullscreen
                         src={project.video}
                       ></iframe>
-                    ) : (
+                    </div>
+                  ) : (
+                    <div className="projectImage">
                       <Image src={project.img} alt={project.title} />
-                    )}
-                  </a>
-                </div>
+                    </div>
+                  )}
+                </a>
               </div>
             </div>
           ))}

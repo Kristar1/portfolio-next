@@ -56,7 +56,7 @@ const Section1 = () => {
           justifyContent='center'
 
         >
-            <Image height='600px' src='/assets/pic.jpg' />
+            <Image height={['unset','600px']} src='/assets/pic.jpg' />
         </Box>
          <Box>
           <chakra.h2
