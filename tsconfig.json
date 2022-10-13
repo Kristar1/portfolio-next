@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "hooks/useLocalstorage.js", "components/home/Hero2.jsx", "components/Layout.jsx", "pages/contact.jsx", "components/MainSeo.jsx", "components/Layout.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "hooks/useLocalstorage.js", "components/home/Hero2.jsx", "components/home/Hero2.jsx", "components/Layout.jsx", "pages/contact.jsx", "components/MainSeo.jsx", "components/Layout.jsx"],
   "exclude": ["node_modules"]
 }
