@@ -6,6 +6,7 @@ import type { AppProps } from "next/app";
 import Layout from "../components/Layout";
 import MainSeo from "../components/MainSeo";
 import AOS from 'aos';
+import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 
 
@@ -30,12 +31,14 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
 
     <ChakraProvider  theme={theme} >
+    <AnimatePresence exitBeforeEnter>
     <MainSeo>
       <Layout>
       <ColorModeScript initialColorMode='dark'/>
       <Component {...pageProps} />
       </Layout>
     </MainSeo>
+    </AnimatePresence>
     </ChakraProvider>
     </>
   );
