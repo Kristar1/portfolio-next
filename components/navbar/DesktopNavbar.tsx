@@ -1,4 +1,4 @@
-import { useColorModeValue, useDisclosure, chakra, Flex, Button, CloseButton, VStack, IconButton, Box, HStack, useColorMode } from '@chakra-ui/react';
+import { useColorModeValue,Image, useDisclosure, chakra, Flex, Button, CloseButton, VStack, IconButton, Box, HStack, useColorMode } from '@chakra-ui/react';
 import React from 'react'
 import Link from 'next/link'
 import { BsMoonStars, BsSunFill } from 'react-icons/bs';
@@ -36,8 +36,9 @@ const DesktopNavbar = () => {
                     alignItems="center"
                   >
                   <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
-                    Krish
+                    {/* Krish */}
                   </chakra.h1>
+                  <Image height={'50px'} src='/assets/logo4.png'/> 
                   </chakra.a>
                 </Flex>
                 <HStack display="flex" alignItems="center" spacing={1}>

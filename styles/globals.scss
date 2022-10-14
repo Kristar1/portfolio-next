@@ -79,10 +79,12 @@ a {
 @media screen and (max-width:600px) {
   .container {
     padding: 0 1rem !important;
+    padding-top: 80px !important;
   }
   .navContainer {
     padding: 0 1rem !important;
   }
+
 }
 @media screen and (max-width:350px) {
   .container {
@@ -797,6 +799,11 @@ input[type="checkbox"]{
   }
   .desktop-none{
     display: block;
+  }
+  .mobile-nav{
+    position: fixed;
+    width: 100vw;
+    z-index: 9998;
   }
   .process{
     margin: 0 15px;

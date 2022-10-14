@@ -1,4 +1,4 @@
-import { Button, Flex, FormLabel, chakra, Box } from "@chakra-ui/react";
+import { Button, Flex, FormLabel, chakra, Box, Image } from "@chakra-ui/react";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -27,7 +27,12 @@ const MobileNavbar = () => {
         htmlFor="active"
         className="close"
       ></label>
-      <Box height="80px" bg="#02054b" className="desktop-none"></Box>
+      <Box height="80px" bg="#02054b"  className="desktop-none mobile-nav" display={'flex'} alignItems='center' justifyContent={'start'} p='0 40px'  >
+        <Link href='/'>
+      <Image height={'40px'} src='/assets/logo4.png'/> 
+        </Link>
+
+      </Box>
 
       <Box zIndex={"9998"} className="wrapper">
         <ul>
