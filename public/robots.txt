@@ -7,8 +7,8 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.kk.com
+Host: https://www.krish.dev
 
 # Sitemaps
-Sitemap: https://www.kk.com/sitemap.xml
-Sitemap: https://www.kk.com/server-sitemap.xml
+Sitemap: https://www.krish.dev/sitemap.xml
+Sitemap: https://www.krish.dev/server-sitemap.xml

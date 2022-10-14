@@ -9,16 +9,7 @@ import Projects from "../components/home/Projects";
 import Cta from "../components/home/Cta";
 
 const Home: NextPage = () => {
-  //   Preloading Animation
-  const [loading, setLoading] = useState(false);
-
-  // useEffect(() => {
-  //  setLoading(true)
-  //  setTimeout(()=>{
-  //   setLoading(false)
-  //  },2000)
-  // }, [])
-
+ 
   return (
     <div className="container">
         <Hero2 />

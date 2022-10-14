@@ -1,11 +1,22 @@
 import { Box } from '@chakra-ui/react'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 // import Navbar from './navbar/Navbar'
   import Footer from './Footer/Footer'
 import DesktopNavbar from './navbar/DesktopNavbar'
 import MobileNavbar from './navbar/MobileNavbar'
 
+
 const Layout = ({children}) => {
+   //   Preloading Animation
+   const [loading, setLoading] = useState(false);
+
+   useEffect(() => {
+    setLoading(true)
+    setTimeout(()=>{
+     setLoading(false)
+    },2000)
+   }, [])
+ 
   useEffect(() => {
     const cursor = document.querySelector('.cursor');
 
@@ -26,6 +37,8 @@ const Layout = ({children}) => {
 
   return (
     <>
+   
+    <>
    <DesktopNavbar/>
     <MobileNavbar/>
     <div zIndex={'10000'} className="cursor"></div>
@@ -33,6 +46,7 @@ const Layout = ({children}) => {
     <Footer/>
     </>
 
+</>
   )
 }
 

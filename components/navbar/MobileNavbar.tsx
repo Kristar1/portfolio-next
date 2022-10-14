@@ -1,11 +1,13 @@
 import { Button, Flex, FormLabel, chakra, Box } from "@chakra-ui/react";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const MobileNavbar = () => {
+  const [toggle, setToggle] = useState(false);
+  console.log(toggle);
   return (
-    <Box >
-      <input type="checkbox" id="active" />
+    <Box>
+      <input type="checkbox" id="active" checked={toggle} />
       {/* <Flex height='70px' width='100vw' justifyContent='space-between' >
       <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
                     Krish
@@ -15,35 +17,47 @@ const MobileNavbar = () => {
         _dark={{ color: "white" }}
         htmlFor="active"
         className="menu-btn"
-        zIndex={'9999'}
-        position='fixed'
-        >
+        zIndex={"9999"}
+        position="fixed"
+        onClick={() => setToggle(!toggle)}
+      >
         <span></span>
       </FormLabel>
-      <label htmlFor="active" className="close"></label>
-    <Box height='80px' bg='#02054b' className="desktop-none" ></Box>
+      <label
+        htmlFor="active"
+        className="close"
+      ></label>
+      <Box height="80px" bg="#02054b" className="desktop-none"></Box>
 
-      <Box zIndex={'9998'} className="wrapper">
+      <Box zIndex={"9998"} className="wrapper">
         <ul>
-          <li>
-            <Link href="/#projects">Projects</Link>
+          <li onClick={() => setToggle(false)}>
+            <Link href="/#projects">
+              Projects
+            </Link>
           </li>
-          <li>
-            <Link href="/#process">Process</Link>
+          <li onClick={() => setToggle(false)}>
+            <Link href="/#process">
+              Process
+            </Link>
           </li>
-          <li>
-            <Link href="/about">About</Link>
+          <li onClick={() => setToggle(false)}>
+            <Link href="/about">
+              About
+            </Link>
           </li>
-          <li>
-            <Link href="/contact">Contact</Link>
+          <li onClick={() => setToggle(false)}>
+            <Link href="/contact">
+              Contact
+            </Link>
           </li>
 
-            <a
-              href="https://drive.google.com/file/d/16IBYURhVK2iYh7QaiOxBBcuNnLSHsndK/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-          <li>
+          <a
+            href="https://drive.google.com/file/d/16IBYURhVK2iYh7QaiOxBBcuNnLSHsndK/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <li>
               <Button
                 bg="#0919cd"
                 fontSize="2xl"
@@ -53,8 +67,8 @@ const MobileNavbar = () => {
               >
                 Resume
               </Button>
-          </li>
-            </a>
+            </li>
+          </a>
         </ul>
       </Box>
     </Box>
