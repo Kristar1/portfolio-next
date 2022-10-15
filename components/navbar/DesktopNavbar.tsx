@@ -9,7 +9,7 @@ const DesktopNavbar = () => {
     const bg = useColorModeValue("white", "gray.800");
         const mobileNav = useDisclosure();
   return (
-    <Box width='100vw' position='fixed' zIndex='9999'   bg={bg}
+    <Box width='100vw' position='fixed' zIndex='9999'   bg={'#02054b'}
               shadow="md"
             >
     
@@ -52,16 +52,16 @@ const DesktopNavbar = () => {
                     }}
                   >
                     <Link href='/#projects' >
-                    <Button color={'black'} _dark={{color:'white'}} _hover={{color:'blue'}} variant="ghost">Projects</Button>
+                    <Button color={'white'} _dark={{color:'white'}} _hover={{color:'blue'}} variant="ghost">Projects</Button>
                     </Link>
                     <Link href='/#process' >
-                    <Button color={'black'} _dark={{color:'white'}} _hover={{color:'blue'}} variant="ghost">Process</Button>
+                    <Button color={'white'} _dark={{color:'white'}} _hover={{color:'blue'}} variant="ghost">Process</Button>
                     </Link>
                     <Link href='/about' >
-                    <Button color={'black'} _dark={{color:'white'}}  _hover={{color:'blue'}}variant="ghost">About</Button>
+                    <Button color={'white'} _dark={{color:'white'}}  _hover={{color:'blue'}}variant="ghost">About</Button>
                     </Link>
                     <Link href='/contact' >
-                      <Button color={'black'} _dark={{color:'white'}} _hover={{color:'blue'}} variant="ghost">Contact</Button>
+                      <Button color={'white'} _dark={{color:'white'}} _hover={{color:'blue'}} variant="ghost">Contact</Button>
                     </Link>
                   </HStack>
                   <a href='https://drive.google.com/file/d/16IBYURhVK2iYh7QaiOxBBcuNnLSHsndK/view?usp=sharing' target='_blank' rel='noreferrer' >
@@ -69,7 +69,7 @@ const DesktopNavbar = () => {
                     Resume
                   </Button>
                   </a>
-                  <Box padding='3' paddingLeft={'5'} onClick={toggleColorMode}>
+                  <Box color='white'  padding='3' paddingLeft={'5'} onClick={toggleColorMode}>
                 {colorMode === 'light' ? <BsMoonStars /> : <BsSunFill />}
               </Box>
                   <Box

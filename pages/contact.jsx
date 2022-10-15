@@ -165,6 +165,7 @@ const [message, setMessage] = useState('')
                           _hover={{
                             borderRadius: "gray.300",
                           }}
+                          _dark={{color:'black'}}
                           placeholder="message"
                           name="message"
                         />
