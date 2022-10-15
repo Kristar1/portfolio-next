@@ -63,7 +63,7 @@ const Projects = () => {
   return (
     <Box minH="100vh" mt="140px">
       <div className=" specialSection projects" id="projects">
-        <Heading textAlign="center" as="h2" fontSize="4xl">
+        <Heading mt={['30px', '0']} textAlign="center" as="h2" fontSize="4xl">
           Some Things I’ve Built
         </Heading>
         <div className="p">
