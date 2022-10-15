@@ -58,7 +58,7 @@ const MobileNavbar = () => {
           </li>
 
           <a
-            href="https://drive.google.com/file/d/16IBYURhVK2iYh7QaiOxBBcuNnLSHsndK/view?usp=sharing"
+            href="https://drive.google.com/file/d/1t7OX3SlTWfe9C8S2tLA5iTDZK0mA2_ei/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >

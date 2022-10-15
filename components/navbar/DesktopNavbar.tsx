@@ -64,7 +64,7 @@ const DesktopNavbar = () => {
                       <Button color={'white'} _dark={{color:'white'}} _hover={{color:'blue'}} variant="ghost">Contact</Button>
                     </Link>
                   </HStack>
-                  <a href='https://drive.google.com/file/d/16IBYURhVK2iYh7QaiOxBBcuNnLSHsndK/view?usp=sharing' target='_blank' rel='noreferrer' >
+                  <a href='https://drive.google.com/file/d/1t7OX3SlTWfe9C8S2tLA5iTDZK0mA2_ei/view?usp=sharing' target='_blank' rel='noreferrer' >
                   <Button color='white' bg="#0919cd" size="md" _hover={{transform:'scale(1.1)', backgroundColor:'blue'}} transition='0.5s ease-in-out' >
                     Resume
                   </Button>

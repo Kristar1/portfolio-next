@@ -12,7 +12,7 @@ import { Box } from "@chakra-ui/react";
 const Home: NextPage = () => {
  
   return (
-    <Box className="container"  >
+    <Box className="container" pt='70px' >
         <Hero2 />
         <Projects />
         <Process/>
