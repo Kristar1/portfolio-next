@@ -29,7 +29,7 @@ const MobileNavbar = () => {
       ></label>
       <Box height="80px" bg="#02054b"  className="desktop-none mobile-nav" display={'flex'} alignItems='center' justifyContent={'start'} p='0 40px'  >
         <Link href='/'>
-      <Image height={'40px'} src='/assets/logo4.png'/> 
+      <Image height={'40px'} mt='20px' src='/assets/logo4.png'/> 
         </Link>
 
       </Box>

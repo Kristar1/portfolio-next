@@ -798,7 +798,7 @@ input[type="checkbox"]{
     display: none !important;
   }
   .desktop-none{
-    display: block;
+    display: block !important;
   }
   .mobile-nav{
     position: fixed;
