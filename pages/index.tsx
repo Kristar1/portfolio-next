@@ -13,6 +13,17 @@ const Home: NextPage = () => {
  
   return (
     <Box className="container" pt='70px' >
+      <Head>
+      <title>Krish Kedia - Full Stack Web developer and UI/UX Designer</title>
+
+      <link rel="canonical" href="/" />
+        <meta
+          name="description"
+          data-rh="true"
+          content="Hello I am Krish a mern stack developer who can help with all of your websites queries from technologies like next.js, and react.js to SEO and related topics"
+        />
+        <meta property="og:type" content="website" />
+      </Head>
         <Hero2 />
         <Projects />
         <Process/>

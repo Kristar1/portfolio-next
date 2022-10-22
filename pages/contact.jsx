@@ -27,12 +27,25 @@ import {
 import { BsGithub,BsLinkedin, BsPerson, BsTwitter } from "react-icons/bs";
 import { useState } from "react";
 import React from 'react'
+import Head from "next/head";
 
 
 const Contact = () => {
 const [message, setMessage] = useState('')
 
   return (
+    <>
+     <Head>
+      <title>Contact Krish Kedia - Full Stack Web developer and UI/UX Designer</title>
+
+      <link rel="canonical" href="/contact" />
+        <meta
+          name="description"
+          data-rh="true"
+          content="Hello I am Krish a mern stack developer who can help with all of your websites queries from technologies like next.js, and react.js to SEO and related topics"
+        />
+        <meta property="og:type" content="website" />
+      </Head>
     <Container bg={["#02054B","#9DC4FB"]} maxW="full" mt={0} centerContent overflow="hidden" pt={['30px','100px']} >
       <Flex>
         <Box
@@ -195,6 +208,8 @@ const [message, setMessage] = useState('')
         </Box>
       </Flex>
     </Container>
+    </>
+
   )
 }
 
