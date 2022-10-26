@@ -8,7 +8,7 @@ import MainSeo from "../components/MainSeo";
 import AOS from 'aos';
 import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
-
+import Script from 'next/script'
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -29,6 +29,14 @@ function MyApp({ Component, pageProps }: AppProps) {
   const theme = extendTheme({ colors });
   return (
     <>
+{/* <Script
+src="//code.tidio.co/gbzhzuepvqfj1troagxtuk2slf5bbhcx.js" 
+onError={(e) => {
+  console.error(' Tidio Script failed to load', e)
+}}
+async
+/> */}
+
 
     <ChakraProvider  theme={theme} >
     <AnimatePresence exitBeforeEnter>
