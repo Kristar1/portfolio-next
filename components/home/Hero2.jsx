@@ -49,6 +49,16 @@ export default function Hero2() {
           // }}
         >
           <Text fontSize={"20px"}>Hi , I&apos;m</Text>
+          <Box  as={motion.div}
+            initial={{
+              x: "-1000",
+            }}
+            transition="0.2s"
+            animate={{
+              // y:299,
+              x: 0,
+            }}>
+
           <Heading
             as="h1"
             style={{ marginTop: "20px" }}
@@ -58,45 +68,43 @@ export default function Hero2() {
             fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
           >
             <Text  position={"relative"}
-            as={motion.div}
-            initial={{
-              x: "-1000",
-            }}
-            transition="0.2s"
-            animate={{
-              // y:299,
-              x: 0,
-            }}
+           
             >
               Krish kedia
             </Text>
             {/* <br /> */}
-            <Text color={"blue.400"}  as={motion.div}
-          initial={{
-            x: "-1000",
-          }}
-          transition="0.4s"
-          animate={{
-            // y:299,
-            x: 0,
-          }}>
+            <Text color={"blue.400"}  
+            // as={motion.div}
+          // initial={{
+          //   x: "-1000",
+          // }}
+          // transition="0.4s"
+          // animate={{
+          //   // y:299,
+          //   x: 0,
+          // }}>
+          >
               I build things for the web.
             </Text>
           </Heading>
-          <Text color={"gray.500"} fontSize="lg" _dark={{ color: "gray.200" }}  as={motion.div}
-          initial={{
-            x: "-1000",
-          }}
-          transition="0.8s"
-          animate={{
-            // y:299,
-            x: 0,
-          }}>
+          <Text color={"gray.500"} fontSize="lg" _dark={{ color: "gray.200" }}  
+          // as={motion.div}
+          // initial={{
+          //   x: "-1000",
+          // }}
+          // transition="0.8s"
+          // animate={{
+          //   // y:299,
+          //   x: 0,
+          // }}
+          >
             I will help your team win customers by building value through
             strategic web design, people-centric digital experiences, and
             developing high-quality websites that stand out from the
             competition.
           </Text>
+          </Box>
+
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
@@ -126,16 +134,16 @@ export default function Hero2() {
           as={motion.div}
           // animation={animation}
           initial={{
-            y:50
-          }}
-          animate={{
             y:20
           }}
+          animate={{
+            y:0
+          }}
            transition={{
-          duration: 3,
+          duration: 2.5,
           ease: "easeInOut",
           repeat: Infinity,
-          repeatType: "loop",
+          repeatType: "mirror",
         }}
           
          
