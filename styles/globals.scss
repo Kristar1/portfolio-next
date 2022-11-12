@@ -565,6 +565,17 @@ iframe{
     border: 0px;
   }
 } 
+@media screen and (max-width:350px){
+  .projectDesc p{
+    width: 90vw;
+    padding-left: 20px;
+
+  }
+  .projectDesc h3{
+    padding-left: 20px;
+  }
+  
+}
 
 
 /* Process */
