@@ -50,13 +50,13 @@ const Projects = () => {
       stack: ["akar-icons:html-fill", "cib:css3-shiled", "cib:javascript"],
     },
     
-    {
-      title: "Consulting Agency Website",
-      desc: "I did the entire frontend development of the website based on the design provided by the client. The website provides details about there services , founder, has caseStudies and latest thinking",
-      link: "https://eclientcare-ui-next.vercel.app/",
-      img: "assets/consulting.jpeg",
-      stack: ["logos:nextjs-icon", "cib:css3-shiled", "simple-icons:chakraui"],
-    },
+    // {
+    //   title: "Consulting Agency Website",
+    //   desc: "I did the entire frontend development of the website based on the design provided by the client. The website provides details about there services , founder, has caseStudies and latest thinking",
+    //   link: "https://eclientcare-ui-next.vercel.app/",
+    //   img: "assets/consulting.jpeg",
+    //   stack: ["logos:nextjs-icon", "cib:css3-shiled", "simple-icons:chakraui"],
+    // },
    
   ];
   // <iframe width="1044" height="481" src="https://www.youtube.com/embed/tssRZ299YG0" title="My Party Vendor Directory Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
