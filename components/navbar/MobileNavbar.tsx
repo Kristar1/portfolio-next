@@ -27,9 +27,9 @@ const MobileNavbar = () => {
         htmlFor="active"
         className="close"
       ></label>
-      <Box height="80px" bg="#02054b"  className="desktop-none mobile-nav" display={'flex'} alignItems='center' justifyContent={'start'} p='0 40px'  >
+      <Box height="80px" bg="#02054b" className="desktop-none mobile-nav" display={'flex'} alignItems='center' justifyContent={'start'} p='0 40px'  >
         <Link href='/'>
-      <Image height={'40px'} mt='20px' src='/assets/logo4.png'/> 
+          <Image height={'40px'} mt='20px' src='/assets/logo4.png' />
         </Link>
 
       </Box>
@@ -58,7 +58,7 @@ const MobileNavbar = () => {
           </li>
 
           <a
-            href="https://drive.google.com/file/d/1z75WaI-fLVW3qbTOaPDvhvPIaijL5A5X/view?usp=sharing"
+            href="https://drive.google.com/file/d/1iJ4a8s5KYv-rGqD9B9fxSzxvkiHtvP0z/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >

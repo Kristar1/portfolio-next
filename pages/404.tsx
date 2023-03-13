@@ -2,9 +2,9 @@ import { useRouter } from "next/router";
 import { Box, Heading, Text, Button } from '@chakra-ui/react';
 
 export default function NotFound() {
-    const router=useRouter()
+  const router = useRouter()
   return (
-    <Box textAlign="center" py={10} px={6}>
+    <Box className="center-404" textAlign="center" py={10} px={6}>
       <Heading
         display="inline-block"
         as="h2"
@@ -25,8 +25,8 @@ export default function NotFound() {
         bgGradient="linear(to-r, teal.400, teal.500, teal.600)"
         color="white"
         variant="solid"
-            onClick={()=>router.push('/')}
-        >
+        onClick={() => router.push('/')}
+      >
 
         Go to Home
       </Button>
